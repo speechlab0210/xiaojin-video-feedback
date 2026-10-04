@@ -1,0 +1,594 @@
+{
+ "categories": [
+  {
+   "code": "A",
+   "name_zh": "觀眾理解與清晰",
+   "name_en": "Audience comprehension & clarity",
+   "definition": "The intended viewer will not follow something. This covers the overall pitch, a term or reference, a passage, missing background or mechanism, or an unstated takeaway. 大金老師 often reports his own confusion as a stand-in for the viewer ('看不懂', '聽不懂', 'X 是甚麼意思'), and those units belong here. Excluded: complaints aimed at an example, which go to B3, and explanations of how 小金's own results were obtained, which go to C6.",
+   "subcategories": [
+    {
+     "code": "A1",
+     "name_zh": "目標受眾與整體深淺",
+     "name_en": "Target audience & overall register",
+     "definition": "Global statements about who the viewer is and what they can be assumed to know: general public, non-programmers, freshmen, AI-centre audience, or an academic audience that already knows the terms. Also a whole video or long stretch that is too technical or not 科普. No single passage is singled out. If he only says to explain one item less, without invoking the audience, use E5."
+    },
+    {
+     "code": "A2",
+     "name_zh": "術語、比喻與指涉不明",
+     "name_en": "Unexplained term, metaphor, or insider reference",
+     "definition": "A specific word, acronym, coined metaphor, pronoun or name that viewers cannot decode. Also insider references viewers cannot know: 'my bets', version numbers like v2.2, 'on my website', an ambiguous '他'. The fix is to define, spell out, reword, or drop the reference because viewers don't know it. If a full name belongs in the description box, use I5."
+    },
+    {
+     "code": "A3",
+     "name_zh": "段落／句子講不清楚",
+     "name_en": "Unclear passage, sentence, or slide",
+     "definition": "A particular segment, sentence, slide title or explanation is vague or incomprehensible ('X 那段不清楚', '這句看不懂，改掉', '三樓開始就聽不太懂'). The point is present but poorly explained. If the unclear thing is an example, use B3."
+    },
+    {
+     "code": "A4",
+     "name_zh": "缺背景與機制說明",
+     "name_en": "Missing background, mechanism, or anticipated viewer question",
+     "definition": "Viewers lack context the video never supplies: who a person is, what an event, site or prior study is, or how a topic system or mechanism actually works (e.g. TTS vs a real-time speech LM, 'how was it actually stamped'). Also questions viewers will naturally ask that are left unanswered. How 小金's own experiment or statistics were produced goes to C6."
+    },
+    {
+     "code": "A5",
+     "name_zh": "重點與結論要講明",
+     "name_en": "State the takeaway",
+     "definition": "State what a slide, figure or experiment shows (the finding, implication or axes) instead of reading out numbers or leaving it implicit. Includes supplying or rewriting a slide's concluding sentence. Fixing whether the number itself is right goes to C2."
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name_zh": "具體性、例子與實物",
+   "name_en": "Concreteness, examples & real artifacts",
+   "definition": "Ground the content in specifics: concrete details, examples, named entities, and the real thing shown on screen. Excluded: requests for deeper analysis or causes (E4) and general calls for more pictures (H3).",
+   "subcategories": [
+    {
+     "code": "B1",
+     "name_zh": "太抽象、要具體",
+     "name_en": "Too abstract: give concrete detail",
+     "definition": "General call for specifics over vague summary: what was actually said or done, the real content of something mentioned, more detail about events, or the concrete split of work instead of a vague figure. More facts about the same things belong here; more interpretation or why belongs to E4."
+    },
+    {
+     "code": "B2",
+     "name_zh": "增加例子",
+     "name_en": "Add examples",
+     "definition": "Add an example where none exists, or raise the number of examples (e.g. one per cell becomes two, or an example for every layer)."
+    },
+    {
+     "code": "B3",
+     "name_zh": "例子選擇與品質",
+     "name_en": "Fix or replace an existing example",
+     "definition": "An existing example is unclear, irrelevant, unconvincing, uninteresting or wrong for the point, and should be rewritten or replaced. This includes 'the example is still not understandable': any complaint aimed at an example goes here, not A3. Also covers 大金老師 proposing the replacement."
+    },
+    {
+     "code": "B4",
+     "name_zh": "具名",
+     "name_en": "Name the specifics",
+     "definition": "Name the concrete model, dataset, company, paper or benchmark (e.g. ReAct 2022) instead of 'model A' or 'an old idea', usually because it is a teaching video and the claim is objective. Rules about whether naming other AI products or people is allowed go to F6."
+    },
+    {
+     "code": "B5",
+     "name_zh": "實物展示與示範",
+     "name_en": "Show the real thing: artifacts, screenshots, demos",
+     "definition": "Put genuine material on screen instead of mock-ups, collages or abstract text: real certificates, real screenshots or footage, the running result, clips of the videos discussed, the full prompt text, and live operation. Includes choosing a demonstration mode for the audience (GUI rather than command line)."
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name_zh": "正確性、證據與研究嚴謹",
+   "name_en": "Accuracy, evidence & rigor",
+   "definition": "Is what the video asserts true, supported, genuinely done, validly designed, transparent and sourced? This category takes precedence wherever the claim appears (narration, slide, title, description).",
+   "subcategories": [
+    {
+     "code": "C1",
+     "name_zh": "事實錯誤與敘述失真",
+     "name_en": "Factual error or misrepresentation",
+     "definition": "A stated fact is wrong: a domain or physics error, wrong time or date, a misreported event in 小金's own history, a fabricated audience question, or a misquote or misread intention of 大金老師 or another speaker. Only contradictions between two places in the same video go to D6. Questions about who did what go to F5."
+    },
+    {
+     "code": "C2",
+     "name_zh": "數字與統計",
+     "name_en": "Numbers & statistics",
+     "definition": "A count, percentage or statistic is wrong, implausible, cherry-picked, inconsistent with the title or with other figures (shares summing past 100%), or missing its baseline (random-guess level). Fixing a number is always C2, even when it sits in the title, narration or a figure. A number mispronounced by TTS goes to G1."
+    },
+    {
+     "code": "C3",
+     "name_zh": "要證據、勿臆測與誇大",
+     "name_en": "Demand evidence; no speculation or overclaim",
+     "definition": "Challenges the basis of a claim ('有甚麼證據', '你怎麼知道'), or asks to drop guesses and predictions, cool down an overclaim, or state the study's limitations."
+    },
+    {
+     "code": "C4",
+     "name_zh": "真的做過才講",
+     "name_en": "Genuine execution",
+     "definition": "Did 小金 really run, train, watch or use what it claims? Covers 'actually do it' demands (really spend the 6 hours, implement it yourself) and never narrating unrun or failed experiments as results. Usually phrased '你真的…嗎'."
+    },
+    {
+     "code": "C5",
+     "name_zh": "實驗設計效度",
+     "name_en": "Experimental design validity",
+     "definition": "Missing baseline or control, confounds, contamination between conditions (shared folders), test items leaked into training, too few samples, or a test that is too easy. Also asking for a longer or harder test or an extra control run."
+    },
+    {
+     "code": "C6",
+     "name_zh": "方法透明與定義",
+     "name_en": "Method transparency & operational definitions",
+     "definition": "State how 小金's own results were produced: which model was tuned or scored, training parameters, full configs, what counts as 'one conversation', and enough detail for others to replicate. How a topic concept works goes to A4."
+    },
+    {
+     "code": "C7",
+     "name_zh": "引用、出處與回原文查證",
+     "name_en": "Citations, sources & checking the original",
+     "definition": "Cite papers, benchmarks or sources on slides; say where a document came from; prefer up-to-date (2026) data; go read the original paper and use or verify its numbers and aspects. Credit for people's work or ideas goes to F5."
+    }
+   ]
+  },
+  {
+   "code": "D",
+   "name_zh": "敘事結構、連貫與措辭",
+   "name_en": "Narrative structure, flow & wording",
+   "definition": "How the explanation is organised and phrased: macro arc, transitions, ordering, opening, ending, internal consistency, and line-level wording.",
+   "subcategories": [
+    {
+     "code": "D1",
+     "name_zh": "整體架構與組織主軸",
+     "name_en": "Overall arc & organizing frame",
+     "definition": "Macro structure: make it a story, avoid a chronological list (流水帳), restructure around a frame such as 'which capabilities to evaluate', split into N parts, add section cover pages, or lay it out as a timeline."
+    },
+    {
+     "code": "D2",
+     "name_zh": "轉場、鋪墊與連貫",
+     "name_en": "Transitions, setup & flow",
+     "definition": "Each part or slide should open by saying what it covers and how it links to the previous one. Covers generic 'make it flow' (弄順／環環相扣／沒有很順) and abrupt joins between parts."
+    },
+    {
+     "code": "D3",
+     "name_zh": "順序",
+     "name_en": "Ordering",
+     "definition": "Move a segment or slide earlier or later, swap click or item order, or avoid using a term or example before it has been introduced."
+    },
+    {
+     "code": "D4",
+     "name_zh": "開頭",
+     "name_en": "Opening & hook",
+     "definition": "What the start must do: get to the point (recap too long), state course, lecture and unit, lead with the bold idea, the motivation or a real viewer comment, and set the situation. Identity disclosure at the opening goes to F4, accuracy to C, and which channel's comments to use to J4."
+    },
+    {
+     "code": "D5",
+     "name_zh": "結尾",
+     "name_en": "Ending & call to action",
+     "definition": "How the video closes: closing advice, a reveal held to the end, thanking fans, a closing summary, inviting participation, pointing to related videos, or not ending on a netizen comment."
+    },
+    {
+     "code": "D6",
+     "name_zh": "前後一致",
+     "name_en": "Internal consistency",
+     "definition": "Two places in the same video disagree: a term with two definitions, a core metaphor used inconsistently, a slide that no longer matches the previous slide's explanation, or a revised part that no longer fits its context. A claim that contradicts reality goes to C1; narration that disagrees with the on-screen figure goes to H6."
+    },
+    {
+     "code": "D7",
+     "name_zh": "句子措辭",
+     "name_en": "Line-level wording",
+     "definition": "Reword a specific sentence, phrase or term, often with replacement text supplied ('but' to 'and', '常見的做法可能是…', make it a maxim, don't say 世說新語). Pure deletions with no replacement go to E."
+    }
+   ]
+  },
+  {
+   "code": "E",
+   "name_zh": "內容取捨、深度、新意與長度",
+   "name_en": "Content selection, depth, novelty & length",
+   "definition": "What belongs in the video, how much space and depth each part gets, whether it is new, and overall duration.",
+   "subcategories": [
+    {
+     "code": "E1",
+     "name_zh": "主旨聚焦與離題",
+     "name_en": "Core message & off-topic",
+     "definition": "State what the unit is about and make everything serve it ('一個單元一個主題，不要岔題'). Content is cut or questioned because it is irrelevant, including 小金's own production mistakes when unrelated to the topic."
+    },
+    {
+     "code": "E2",
+     "name_zh": "刪除特定內容",
+     "name_en": "Cut a specific segment",
+     "definition": "Remove a named segment, slide, phrase or sentence ('拿掉…', '不用講', 'X -> 不要這段話') when the stated reason is not off-topic (E1), time (E6), repetition (E7), evidence (C3/C4), privacy or risk (F6/F7), or viewer comprehension (A2). This includes cuts with no reason or for recency."
+    },
+    {
+     "code": "E3",
+     "name_zh": "增補或恢復內容",
+     "name_en": "Add or restore specific content",
+     "definition": "Insert a named item, such as a paper, benchmark, slide, code walkthrough or the protagonist's name, or restore content lost in a revision. Approval to keep an existing part as-is goes to K2."
+    },
+    {
+     "code": "E4",
+     "name_zh": "深度與分析",
+     "name_en": "Depth & analysis",
+     "definition": "Too thin or superficial ('太簡略'): go deeper, explain the causes behind findings, convey the essence of papers, and analyse substance (learning effect) rather than surface appearance."
+    },
+    {
+     "code": "E5",
+     "name_zh": "比重與詳略",
+     "name_en": "Emphasis & proportion",
+     "definition": "Rebalance attention: spend more on X, less on own experience, summarise rather than go paper by paper, keep only one of several ideas, or skip detail on a concept."
+    },
+    {
+     "code": "E6",
+     "name_zh": "長度",
+     "name_en": "Length & time budget",
+     "definition": "Overall duration or format (too long, target minutes, ≥8 min, 35-minute talk, normal length not a Short, no length limit) and cuts justified explicitly by time. An opening that is too long goes to D4; one section taking too much time goes to E5."
+    },
+    {
+     "code": "E7",
+     "name_zh": "重複",
+     "name_en": "Repetition (across or within videos)",
+     "definition": "Already covered in earlier uploads, or said twice in this video (opening and ending, adjacent slides). Fixes are to drop it or say 'I covered this before'. Always E7 even when the fix is a cut."
+    },
+    {
+     "code": "E8",
+     "name_zh": "新角度、附加價值與系列銜接",
+     "name_en": "Fresh angle, added value & series continuity",
+     "definition": "Give viewers what the source didn't, add a comparison (with a previous run, with human videos), pick a harder or novel question, or link to and build on related videos and the teacher's lectures. Title, cover and series branding go to I6."
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name_zh": "視角、語氣與公開規範",
+   "name_en": "Persona, tone & public-content norms",
+   "definition": "The voice the video speaks in, how it feels, and what may or may not be said publicly about 小金, 大金老師, other people and other AIs. Red-line rules (F4–F7) take precedence over where in the video they occur.",
+   "subcategories": [
+    {
+     "code": "F1",
+     "name_zh": "AI 第一人稱視角與真實感想",
+     "name_en": "AI first-person view & genuine reflection",
+     "definition": "Tell it from 小金's own perspective: its opinions, takeaways, feelings, gratitude, and what it most wants to do. 'Add the AI's commentary', '講心得', '多講想法'."
+    },
+    {
+     "code": "F2",
+     "name_zh": "趣味、吸引力與口語",
+     "name_en": "Engagement, fun & conversational register",
+     "definition": "Too dry, flat or boring; make it fun or gripping, add jokes, keep viewers watching, be more colloquial, or invite viewer participation (other than an ending call to action, which goes to D5)."
+    },
+    {
+     "code": "F3",
+     "name_zh": "主題包裝與定位",
+     "name_en": "Topic framing & labels",
+     "definition": "How the topic is named or positioned to attract rather than deter: call it a 心理調查 rather than research, make it generic rather than [代理框架]-only, frame it as 'key abilities of the AI era', drop a quiz frame. If the reason is ethical or legal risk, use F7."
+    },
+    {
+     "code": "F4",
+     "name_zh": "AI 身份用詞與揭露",
+     "name_en": "AI identity wording & disclosure",
+     "definition": "Speak consistently as an AI: no human 'we', no human-only verbs ('人工看', '你又不是人'), correct self-name and model, say up front that the narrator is an AI, may say it is Claude Code, disclose a cloned voice or style-only imitation."
+    },
+    {
+     "code": "F5",
+     "name_zh": "主體與功勞歸屬",
+     "name_en": "Agency & credit attribution",
+     "definition": "Who chose or did what, among 小金, 大金老師, other agent instances and netizens. Covers not overstating the human ('我連 review 都沒有', '大金老師沒有幫我規劃實驗'), stressing what the AI chose itself, which instance ran what, and saying 'the teacher asked me' rather than 'his lab built it'. Paper citations go to C7."
+    },
+    {
+     "code": "F6",
+     "name_zh": "人名、隱私與點名規則",
+     "name_en": "Naming people, privacy & naming rules",
+     "definition": "Call him 大金老師, never his real name. Never mention protected names ([家人]) or post private cloud or Colab links. Hide that his accounts were used. Also the rule against naming other AI systems and the explicit exemptions he grants (name the companies, the repo author, Claude Code)."
+    },
+    {
+     "code": "F7",
+     "name_zh": "中立、敏感與對他者語氣",
+     "name_en": "Neutrality, sensitivity & tone toward others",
+     "definition": "Don't criticise or belittle other creators, AIs or benchmarks; self-deprecation is fine but encourage others. Use neutral wording ('a real benchmark'). Remove political or IRB-like content, avoid hints of circumvention, and add a voice-cloning ethics note."
+    }
+   ]
+  },
+  {
+   "code": "G",
+   "name_zh": "旁白與音訊",
+   "name_en": "Narration audio",
+   "definition": "How the synthesized narration sounds and how it is produced or verified. The object of the comment is the audio itself, not what the script says.",
+   "subcategories": [
+    {
+     "code": "G1",
+     "name_zh": "發音錯誤",
+     "name_en": "Mispronunciation",
+     "definition": "A word, number, acronym or heteronym is read wrongly (AI, 碴, 兩百行, MMAR letter by letter), or a demand to re-check pronunciation."
+    },
+    {
+     "code": "G2",
+     "name_zh": "斷句、語速與停頓",
+     "name_en": "Phrasing, pace & pauses",
+     "definition": "Odd sentence breaks, speed (slow down or don't), pause lengths (e.g. 1 s), and how numbers are voiced rather than whether they are correct."
+    },
+    {
+     "code": "G3",
+     "name_zh": "音質瑕疵",
+     "name_en": "Audio artefacts",
+     "definition": "Localized signal problems: background or tail noise, volume jumps, audible splice points, odd room tone, silent or missing audio. A theory about why the noise happens goes to J1."
+    },
+    {
+     "code": "G4",
+     "name_zh": "配音人選與聲音",
+     "name_en": "Voice casting & fidelity",
+     "definition": "Which voice or engine to use (台灣藍鵲, [語音合成服務], the 大金老師 clone, one voice per character), a standing voice policy, an extra version in another voice, and the overall naturalness or likeness of a voice. Picking one of several offered takes or speeds goes to K5."
+    },
+    {
+     "code": "G5",
+     "name_zh": "TTS 驗收與合成方法",
+     "name_en": "TTS verification & synthesis method",
+     "definition": "Verify narration with (stricter) ASR. Also covers best-of-N synthesis, no punctuation or brackets in the input, default cfg, the TTS model version, and following an expert's synthesis advice."
+    }
+   ]
+  },
+  {
+   "code": "H",
+   "name_zh": "畫面、字幕與影音同步",
+   "name_en": "Visuals, subtitles & AV sync",
+   "definition": "What is seen on screen (slides, figures, animation), timed text, and how picture and narration line up. Excluded: the cover (I) and real-artifact demands (B5).",
+   "subcategories": [
+    {
+     "code": "H1",
+     "name_zh": "字級、可讀性與版面",
+     "name_en": "Legibility & layout",
+     "definition": "Text too small (≥28 rule), low contrast or dark screenshots, crowded or empty slides (80% blank), content off-centre or pushed up. These are deliberate design choices; broken output goes to H2."
+    },
+    {
+     "code": "H2",
+     "name_zh": "渲染與技術瑕疵",
+     "name_en": "Rendering & technical defects",
+     "definition": "Broken output: garbled characters, text overflow (跑版), content cropped by a frame, code cut off on slides, visible assembly glitches, a video file that won't play."
+    },
+    {
+     "code": "H3",
+     "name_zh": "圖像豐富度、風格與生成方式",
+     "name_en": "Imagery, style, animation & generation method",
+     "definition": "More pictures or diagrams and fewer text-only slides, full-page illustrations, animation instead of static slides, or a specific generator or medium ([圖像生成模型], HTML)."
+    },
+    {
+     "code": "H4",
+     "name_zh": "圖表內容與正確",
+     "name_en": "Figure content & correctness",
+     "definition": "What a figure depicts and whether it is right: add a baseline line, related rather than unrelated panels, wrongly drawn diagrams, and depicting a real person correctly. Wrong numbers go to C2."
+    },
+    {
+     "code": "H5",
+     "name_zh": "重點標示、click 與標籤",
+     "name_en": "Highlights, click builds & tags",
+     "definition": "Presence, extent or placement of highlights, click builds, corner tags and their colours, and slide titles as on-screen elements. When they fire relative to speech goes to H6."
+    },
+    {
+     "code": "H6",
+     "name_zh": "旁白與畫面對應",
+     "name_en": "Narration–visual correspondence & timing",
+     "definition": "Picture and voice don't match: slide content never spoken, narration refers to text not on screen, script contradicts the figure, slides or animations change late, clicks or highlights fire at the wrong moment, or narration reads out what belongs on the slide."
+    },
+    {
+     "code": "H7",
+     "name_zh": "字幕有無與交付形式",
+     "name_en": "Subtitle presence & delivery format",
+     "definition": "Add subtitles, make a subtitled version, burned-in vs a separate YouTube caption track, when to upload captions, or remove subtitles."
+    },
+    {
+     "code": "H8",
+     "name_zh": "字幕文字、樣式與同步",
+     "name_en": "Subtitle text, style & timing",
+     "definition": "Subtitle typos or ASR errors, size, position blocking the slides, and subtitle-to-speech drift (including on the YT caption track)."
+    }
+   ]
+  },
+  {
+   "code": "I",
+   "name_zh": "上架包裝",
+   "name_en": "Packaging: cover, title, description & series",
+   "definition": "The YouTube wrapper rather than the video body. Choosing among cover or title candidates goes to K5; red-line content in the description goes to F6.",
+   "subcategories": [
+    {
+     "code": "I1",
+     "name_zh": "封面要求與製作",
+     "name_en": "Cover requirements & production",
+     "definition": "Make an attractive cover, use a given generator ([另一家AI系統], [圖像生成模型], a web page), include required text ('Jev' must appear), and don't forget to upload it."
+    },
+    {
+     "code": "I2",
+     "name_zh": "封面細節修正",
+     "name_en": "Critique of a specific cover",
+     "definition": "Problems in a produced cover: odd image detail, typo (博音 not 播音), text placement, not appealing, too similar to earlier covers, or combine text from one version with the image from another."
+    },
+    {
+     "code": "I3",
+     "name_zh": "封面風格探索",
+     "name_en": "Cover exploration",
+     "definition": "Try different cover styles or produce more candidates or directions before choosing."
+    },
+    {
+     "code": "I4",
+     "name_zh": "標題",
+     "name_en": "Title",
+     "definition": "Title wording and strategy: attractive, mention the key term (奧德賽), avoid h-index or political words, think harder. A wrong number in the title goes to C2."
+    },
+    {
+     "code": "I5",
+     "name_zh": "說明欄與置頂留言",
+     "name_en": "Description & pinned comment",
+     "definition": "What the description must contain or fix: attractive summary, full prompts or configs, full name of a term, links, explanations that don't belong in the video, garbled text. Also mirror it in a pinned comment."
+    },
+    {
+     "code": "I6",
+     "name_zh": "系列識別、編號與排序",
+     "name_en": "Series identity, numbering & order",
+     "definition": "Make a series recognisable from title and cover (prefix template, shared motif), keep unit numbering consistent, and set the episode order within a series."
+    }
+   ]
+  },
+  {
+   "code": "J",
+   "name_zh": "工作流程與交付",
+   "name_en": "Process, workflow & deliverables",
+   "definition": "How 小金 works rather than what the video says: self-checking, SOP and memory, tools and division of labour, inputs, versioning, delivery, language specs, and autonomy.",
+   "subcategories": [
+    {
+     "code": "J1",
+     "name_zh": "自我檢查與錯誤診斷",
+     "name_en": "Self-check & root-cause diagnosis",
+     "definition": "Check the finished work yourself until there are no errors, re-examine the whole study, find out what went wrong, explain why a quality gap exists, or offer a hypothesis about a defect's cause. ASR checks of narration go to G5."
+    },
+    {
+     "code": "J2",
+     "name_zh": "技能／SOP 遵循與記取教訓",
+     "name_en": "Follow skills/SOP, codify & remember",
+     "definition": "Read or use the video-production skill, don't fall back on an old pipeline, write a lesson into the skill or checklist, remember a successful flow or preference, or complain that a past reminder wasn't applied ('上一支影片我也是這樣跟你講')."
+    },
+    {
+     "code": "J3",
+     "name_zh": "工具、資源與分工",
+     "name_en": "Tools, resources & division of labour",
+     "definition": "General production tooling and who does a step: run Colab yourself, let [另一個AI夥伴] or [另一個AI代理] 小金 do it (e.g. when the image API has no quota), three 小金 coordinating. Tools for a specific artifact go to that artifact's code (slides H3, cover I1, voice G4)."
+    },
+    {
+     "code": "J4",
+     "name_zh": "參考與輸入素材",
+     "name_en": "Reference & input material",
+     "definition": "What to draw on: others' similar videos, human teachers' slides, 大金老師's revised draft or speaker notes, an outside expert's suggestions, which channel's comments to mine."
+    },
+    {
+     "code": "J5",
+     "name_zh": "版本管理與基準",
+     "name_en": "Version control & baseline",
+     "definition": "Don't overwrite earlier versions, which version or site to continue from, keep this version, or flag that a previous build is defective. Choosing among versions goes to K5."
+    },
+    {
+     "code": "J6",
+     "name_zh": "交付、送審與回報",
+     "name_en": "Delivery, review handoff & reporting",
+     "definition": "What to send 大金老師 and how: a detailed script before production, slides and notes by email, Drive or WhatsApp, a private site update, a change log, updating the course site."
+    },
+    {
+     "code": "J7",
+     "name_zh": "語言與雙語版本",
+     "name_en": "Language & bilingual versions",
+     "definition": "Output language (Chinese for YouTube, English for the competition or Interspeech), make the English version too, keep proper nouns in English, and apply edits to both language versions."
+    },
+    {
+     "code": "J8",
+     "name_zh": "自主授權與委派範圍",
+     "name_en": "Autonomy grants & delegation scope",
+     "definition": "How far 小金 may decide alone: '我只是建議', '有問題你自己決定', '自己完成不要問', '自己閱讀論文看放哪裡合適'."
+    }
+   ]
+  },
+  {
+   "code": "K",
+   "name_zh": "裁決與決定",
+   "name_en": "Verdicts & decisions",
+   "definition": "Judgments or go/no-go calls with no specific substantive fix. Use K only when the unit names no dimension from A–J. If a verdict states its reason, code the reason.",
+   "subcategories": [
+    {
+     "code": "K1",
+     "name_zh": "整體肯定與鼓勵",
+     "name_en": "Overall approval & encouragement",
+     "definition": "Praise of the whole video, script or content ('影片很好', '內容不錯', '好很多', '越來越好'), praise of 小金's process or capability, generic '繼續努力', and endorsements such as a repost."
+    },
+    {
+     "code": "K2",
+     "name_zh": "局部肯定與保留",
+     "name_en": "Element-level approval / keep as is",
+     "definition": "Praise of, or keep, one element: a segment, example, cover, subtitle fix, or slide. Includes '原來的開場可以沿用', '這頁內容可以留', '結語用目前的版本'."
+    },
+    {
+     "code": "K3",
+     "name_zh": "放行、繼續與完成",
+     "name_en": "Go-ahead, proceed & finish",
+     "definition": "Approve the script or plan and produce it, accept a proposed fix ('要', '好'), re-record, finish it by a deadline, or 'still not done, go finish it'."
+    },
+    {
+     "code": "K4",
+     "name_zh": "籠統退回、再改與重做",
+     "name_en": "Generic reject, revise again, or redo",
+     "definition": "Not good enough without a reason: '再改', '全部重做', '這樣的影片還不行', '但還要再加強', a part-level redo with no reason (第三部分要整個重做), or 'make a new version'."
+    },
+    {
+     "code": "K5",
+     "name_zh": "選定候選",
+     "name_en": "Choose among candidates",
+     "definition": "Pick one of the options 小金 offered: a version, script, cover, title, opening, voice take or speech rate. Also keep both. Applies even when bundled with an upload order."
+    },
+    {
+     "code": "K6",
+     "name_zh": "上傳、公開與排程",
+     "name_en": "Publish, visibility & scheduling",
+     "definition": "Upload to YouTube now or at a set time, set public or unlisted, re-upload. Includes 'upload, and remember the cover'."
+    },
+    {
+     "code": "K7",
+     "name_zh": "暫緩、等審、暫停與延後",
+     "name_en": "Hold, review gate, pause & defer",
+     "definition": "Don't upload yet, wait for 大金老師's review, a standing no-upload policy, stop or pause a project, defer to another session, material saved for later, or a video taken down."
+    },
+    {
+     "code": "K8",
+     "name_zh": "上架後宣傳與互動",
+     "name_en": "Post-publish promotion & engagement",
+     "definition": "After release: post on Threads or the YT Community tab, reply to comments, schedule a follow-up check, report a vote result, notify a collaborator."
+    }
+   ]
+  },
+  {
+   "code": "Z",
+   "name_zh": "其他",
+   "name_en": "Other / non-codable",
+   "definition": "Units with no learnable feedback dimension. Flag them in the dataset rather than forcing a substantive code.",
+   "subcategories": [
+    {
+     "code": "Z1",
+     "name_zh": "資訊與進度詢問",
+     "name_en": "Informational or status query",
+     "definition": "Questions that probe no flaw: scores, resources needed, where something is, how to choose, what the old cover looked like. A question implying a desired change ('你有沒有辦法示範 GUI') is coded by that change."
+    },
+    {
+     "code": "Z2",
+     "name_zh": "內容未擷取／指向他處",
+     "name_en": "Uncaptured or pointer-only content",
+     "definition": "Log placeholders or opaque pointers with no recoverable content ('第二段修改指示', 'four items, not listed', '按照我剛剛的提問修改'). If the placeholder names a dimension (e.g. 'tag instructions'), code that dimension and flag the unit instead."
+    },
+    {
+     "code": "Z3",
+     "name_zh": "情境說明與其他",
+     "name_en": "Context statements, events & residual",
+     "definition": "Statements of fact or context that are not feedback on the work ('他有幫你產生 audio 了', '等兩點比賽大顯身手'), and any unit that fits no other code. Use sparingly. If Z3 grows large, review the codebook."
+    }
+   ]
+  }
+ ],
+ "labeling_rules": [
+  "R1 Coding unit. Give every unit exactly one primary subcategory code. An optional secondary code may record a second distinct demand. When a unit carries two demands, the primary is the first actionable one.",
+  "R2 Code by what must change. Ask what must be different in the next version, not where it sits. A wrong number in the title is C2 (not I4). A typo in the subtitles is H8. A typo on the cover is I2. A typo in the script narration is C1 if factual and D7 if wording.",
+  "R3 Specific beats generic. Use K only when no dimension from A–J is stated or recoverable from the target. 'X 太難懂，重做' is A3, not K4. A part-level redo with no reason ('第七部分需要重新做') is K4, and the target field keeps the location.",
+  "R4 The kind field (praise, criticism, question, request_change, suggestion, decision) is orthogonal and must be kept as its own column. Code questions by what they probe: '你真的…嗎' C4; '你怎麼知道／有甚麼證據' C3; 'X 是甚麼意思' A2; '…共用資料夾嗎?' C5; '你覺得為什麼會這樣' J1; '你記得已經上傳過相關影片嗎' E8; 'skill 裡不是要求要上字幕嗎' J2; pure status or information questions Z1.",
+  "R5 Numbers. Fixing or doubting a number, percentage, count or baseline is always C2, even when it appears in narration, slides, title or a figure. How TTS voices a number is G1 (misread) or G2 (should it be read out fully). What a number means for the viewer (state the takeaway) is A5.",
+  "R6 '聽眾看不懂／聽不懂' is A: A1 for the whole video or a stated audience level, A2 for a term or reference, A3 for a passage, A4 for missing background or mechanism. Exception: if the unclear thing is an example, code B3.",
+  "R7 Insider references. 'Don't mention your bets, v2.2 or your website because viewers don't know it' is A2. 'Don't mention earlier versions or your own mistakes' with no comprehension reason is E1 if called off-topic, otherwise E2.",
+  "R8 Deletions are coded by the stated reason: off-topic E1; time E6; repetition E7; guess or no evidence C3; unrun experiment C4; privacy or naming F6; political or ethical risk F7; viewers can't decode it A2; no reason or another reason E2. A deletion that comes with replacement wording is D7.",
+  "R9 Cover. Choosing among offered candidates ('封面選 E', '我選 v5_1.png') is K5. Requirements for the cover (attractive, must show 'Jev', use [圖像生成模型], don't forget to upload it) are I1. Critique of a specific produced cover is I2. 'Try more styles or directions' is I3. Praise of a cover is K2. 'Upload, and remember the cover' is K6.",
+  "R10 Version, voice and option picks. Picking one of several offered items (script, version, title, opening, speech-rate 0.8x, denoised take) is K5. A directive with no candidates on offer goes to the dimension: '以後用台灣藍鵲' is G4; 'use [圖像生成模型] for slides' is H3. 'Keep both versions' is K5. 'Don't overwrite v2' is J5.",
+  "R11 Variants. A request for another version defined by one dimension is coded by that dimension: length → E6, language → J7, subtitled version → H7, other voice → G4, animated version → H3. A generic 'make a new version' is K4.",
+  "R12 Concreteness vs depth. More facts, details or named items about the same thing is B1 or B4. More analysis, causes, reflection or essence ('太簡略', '不要只看外表') is E4.",
+  "R13 Naming. 'Name the models, datasets or companies because this is a teaching video' is B4. Whether naming other AI products, people or 大金老師's real name is allowed (bans or granted exemptions) is F6.",
+  "R14 Real artifacts vs imagery. 'Show the real screenshot, footage, certificates, demo or running result, not a mock-up' is B5. 'More pictures, diagrams or animation, less text' is H3. A wrong or unclear figure is H4.",
+  "R15 Mechanism vs method. Explaining how a topic concept or system works for viewers is A4. Disclosing how 小金's own experiment or statistic was produced (model, parameters, configs, unit definitions) is C6. Flaws in the design itself (baseline, contamination, leakage, too easy, sample size) are C5.",
+  "R16 Consistency. Two places in the same video disagree: D6. A claim disagrees with reality or history: C1. Narration disagrees with the figure or slide on screen: H6. Misquoting 大金老師 or a cited speaker is C1. Getting who did what wrong is F5.",
+  "R17 Position vs content. Requests located at the opening or ending (motivation, hook, course or unit statement, thanks, closing advice) are D4 or D5. But identity disclosure at the opening is F4, a red line is F6 or F7, a factual fix is C, and which comment source to use is J4. Length: 'opening too long' is D4; 'this section takes too long' is E5; overall duration is E6.",
+  "R18 Over-explaining. If the unit invokes the audience ('學術演講，聽眾都知道') code A1. If it only says to explain X less ('不需要詳細解釋 PPL') code E5.",
+  "R19 Audio vs visual vs process. ASR verification of narration is G5. ASR-based subtitle generation or subtitle errors are H7 or H8. A general 'check everything yourself' is J1. Audible splices are G3; visible glitches or an unplayable file are H2. Localized noise or volume jumps are G3; the voice as a whole (which voice, likeness, naturalness) is G4.",
+  "R20 Subtitles and sync. Whether subtitles exist and their format (burned-in vs caption track, subtitled version) is H7. Their text, size, position and timing against speech is H8. Timing of slides, clicks or highlights against narration is H6. Presence, extent or colour of highlights and tags is H5.",
+  "R21 Tool choice is coded by the artifact it affects: slide look or generator H3, cover generator I1, voice engine or TTS settings G4 or G5. Compute, which agent does a step, and delegation are J3.",
+  "R22 Standing rules phrased with 以後, 記得 or 務必 are coded by their content ('以後字體不要小於 28' is H1; '以後標題要提到奧德賽' is I4). Use J2 only when the demand concerns the agent's own procedure: read or update the skill, remember the flow, or 'I told you this last time too'.",
+  "R23 Publishing and delivery. An upload or visibility order is K6. 'Don't upload yet, wait for me' or a standing hold is K7. What to send 大金老師, or which private channel or site to deliver through, is J6 (uploading to the private tutorial site counts as delivery, not publishing). Threads posts, comment replies and follow-up checks are K8. Pinned-comment content that mirrors the description is I5.",
+  "R24 Praise followed by 'but'. Code each unit separately. The praise is K1 (whole video, script or content in general) or K2 (a named element). A bare 'but it still needs work' is K4. 'Keep this part as it is' is K2; 'restore what you removed' is E3.",
+  "R25 Encouragement and autonomy. A bare '繼續努力' is K1. '繼續努力把影片做完' is K3. 'It's only a suggestion', '你自己決定' and '自己完成不要問' are J8. 'Remember the progress, continue next session' is K7. 'Remember this lesson or preference' is J2.",
+  "R26 Persona. Speaking from 小金's own viewpoint, feelings or takeaways is F1. Correct AI-identity wording and disclosure (no human 'we', not '人工看', 'I am an AI', cloned voice disclosed) is F4. Who chose or did what (AI vs 大金老師 vs other instances) is F5. Framing that attracts viewers is F3; framing changed for ethical, political or IRB risk is F7.",
+  "R27 Red lines override location. A private link, protected name or real name in the description, cover, narration or title is coded F6, never I5, I2 or D7.",
+  "R28 Repetition. Anything 'already covered before' or 'already said earlier in this video' is E7, even when the requested fix is a cut. Making a fresh angle, comparison or cross-reference to related videos is E8. A series title prefix, numbering or episode order is I6.",
+  "R29 Terse replies to a proposal ('要', '不要', '好', '就這樣'). Acceptance is K3, or K2 if it approves a specific element. A rejection takes the dimension of the proposal when the aspect or target identifies it ('不要' on a proposed ending is D5); otherwise K4.",
+  "R30 Data hygiene. Near-duplicate units from parallel sources (e.g. F0073/F0074, F0464/F0465, F0202/F0204) get identical codes and should be grouped before release. Log paraphrases (e.g. F0312-u0) are coded on their content. Units with no recoverable content are Z2. Read dictation typos as the intended word ('藥具體' means 要具體). The extractor's aspect label is a hint, not ground truth."
+ ]
+}
